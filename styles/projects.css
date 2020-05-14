@@ -123,10 +123,13 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
 }
 
-main .content {
+main h1 {
+  color: #e4e4e4;
+}
+
+main .project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,66 +142,48 @@ main .content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  height: 50%;
-  margin: 2rem;
+  background-color: white;
+  width: 80%;
+  border-radius: 0.5em;
+  margin-bottom: 5%;
 }
 
-main .content .self-portrait {
-  width: 70%;
-  border-radius: 50%;
+main .project .project-image {
+  width: 98%;
+  margin: 1% 1% 2% 1%;
+  border-radius: 0.5em;
 }
 
-main .content .self-portrait::after {
-  content: "";
+main .project .project-description {
+  font-size: 0.7em;
+  width: 80%;
+  margin-bottom: 5%;
+}
+
+main .project .project-description a {
   display: block;
-  padding-bottom: 100%;
+  border: 1px solid black;
+  text-decoration: none;
+  text-align: center;
+  width: 50%;
+  margin: 5% auto auto auto;
+  color: black;
+  border-radius: 0.5em;
 }
 
-main .content .name,
-main .content .web-dev {
-  color: #e4e4e4;
+main .project .project-description a:hover {
+  border: 1px solid #363636;
+  color: #252525;
 }
 
-main .content .name {
-  font-size: 2.1rem;
+footer {
+  width: 100%;
+  background-color: #3a3a3a;
+  color: gray;
 }
 
-main .content .web-dev {
-  font-size: 1.2rem;
-  font-weight: lighter;
-}
-
-main .cta {
-  font-family: "Poppins", sans-serif;
-  background-color: transparent;
-  padding: 0.4em 1em;
-  color: #e4e4e4;
-  border: 1px solid #e4e4e4;
-  border-radius: 1rem;
-  -webkit-animation: glow 3s linear infinite;
-          animation: glow 3s linear infinite;
-}
-
-main .cta:hover {
-  color: #7a7a7a;
-  border: 1px solid #7a7a7a;
-}
-
-main .cta:focus {
-  outline: none;
-}
-
-main .cta i {
-  margin-left: 1em;
-}
-
-.social-links {
-  width: 40%;
-  margin-top: 20%;
-}
-
-.social-links ul {
+footer .footer-links {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,15 +193,21 @@ main .cta i {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
 }
 
-.social-links ul li a {
-  color: #e4e4e4;
-  font-size: 2em;
+footer .footer-link {
+  color: gray;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+footer .copyright {
+  font-size: 0.8em;
+  margin-left: 3%;
 }
 
 @media only screen and (min-width: 426px) {
@@ -224,4 +215,4 @@ main .cta i {
     display: none;
   }
 }
-/*# sourceMappingURL=landing.css.map */
+/*# sourceMappingURL=projects.css.map */

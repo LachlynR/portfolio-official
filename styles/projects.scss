@@ -57,83 +57,74 @@ header {
 }
 
 // Main
-
 main {
   @include flex(column, flex-start, center);
-  width: 100%;
-
-  .content {
-    @include flex(column, space-around, center);
-    width: 100%;
-    height: 50%;
-    margin: 2rem;
-    .self-portrait {
-      width: 70%;
-      border-radius: 50%;
-
-      &::after {
-        content: "";
-        display: block;
-        padding-bottom: 100%;
-      }
-    }
-
-    .name,
-    .web-dev {
-      color: $textColor;
-    }
-
-    .name {
-      font-size: 2.1rem;
-    }
-
-    .web-dev {
-      font-size: 1.2rem;
-      font-weight: lighter;
-    }
+  h1 {
+    color: $textColor;
   }
 
-  .cta {
-    font-family: "Poppins", sans-serif;
-    background-color: transparent;
-    padding: 0.4em 1em;
-    color: $textColor;
-    border: 1px solid $textColor;
-    border-radius: 1rem;
-    animation: glow 3s linear infinite;
+  .project {
+    @include flex(column, space-around, center);
+    background-color: white;
+    width: 80%;
+    border-radius: 0.5em;
+    margin-bottom: 5%;
 
-    &:hover {
-      color: #7a7a7a;
-      border: 1px solid #7a7a7a;
+    .project-image {
+      width: 98%;
+      margin: 1% 1% 2% 1%;
+      border-radius: 0.5em;
     }
 
-    &:focus {
-      outline: none;
-    }
+    .project-description {
+        font-size: 0.7em;
+        width: 80%;
+        margin-bottom: 5%;
 
-    i {
-      margin-left: 1em;
+        a {
+          display: block;
+          border: 1px solid black;
+          text-decoration: none;
+          text-align: center;
+          width: 50%;
+          margin: 5% auto auto auto;
+          color: black;
+          border-radius: 0.5em;
+
+          &:hover {
+            border: 1px solid #363636;
+            color: #252525;
+          }
+        }
     }
+    
   }
 }
 
-.social-links {
-  width: 40%;
-  margin-top: 20%;
-  //   background-color: white;
-  ul {
-    @include flex(row, space-around, flex-end);
+footer {
+  width: 100%;
+  background-color: rgb(58, 58, 58);
+  color: gray;
+  .footer-links {
+    width: 100%;
+    @include flex(row, space-around, center);
     list-style: none;
+  }
 
-    li a {
-      color: $textColor;
-      font-size: 2em;
-    }
+  .footer-link {
+    color: gray;
+    text-decoration: none;
+    font-size: 0.8em;
+  }
+
+  .copyright {
+    font-size: 0.8em;
+    margin-left: 3%;
   }
 }
 
 @media only screen and (min-width: 426px) {
-    * {
-        display: none;
-    }
+  * {
+    display: none;
+  }
 }
