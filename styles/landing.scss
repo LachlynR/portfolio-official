@@ -1,0 +1,135 @@
+// Import SCSS Modules
+@import "modules/mixins";
+@import "modules/variables";
+@import "modules/keyframes";
+
+// Remove Browser Default Styling and add a box-szing of border-box
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  width: 100vw;
+  @include flex(column, flex-start, center);
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to bottom, $secondary, $highlight);
+}
+
+// Header
+
+header {
+  width: 100%;
+  background-color: rgb(51, 51, 51);
+  border-bottom: 1px solid $primary;
+  @include flex(column, space-between, center);
+
+  .logo-burger {
+    @include flex(row, space-between, center);
+    width: 100%;
+    padding: 0 15%;
+    color: $textColor;
+    font-size: 1.3rem;
+  }
+
+  nav {
+    width: 100%;
+    text-align: center;
+    display: none;
+
+    .nav-links {
+      //   padding-top: 1rem;
+      list-style: none;
+
+      li {
+        padding: 0.3em 0;
+      }
+
+      .nav-link {
+        width: 100%;
+        text-decoration: none;
+        font-size: 0.8em;
+        color: $textColor;
+      }
+    }
+  }
+}
+
+// Main
+
+main {
+  @include flex(column, flex-start, center);
+  width: 100%;
+
+  .content {
+    @include flex(column, space-around, center);
+    width: 100%;
+    height: 50%;
+    margin: 2rem;
+    .self-portrait {
+      width: 70%;
+      border-radius: 50%;
+
+      &::after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }
+    }
+
+    .name,
+    .web-dev {
+      color: $textColor;
+    }
+
+    .name {
+      font-size: 2.1rem;
+    }
+
+    .web-dev {
+      font-size: 1.2rem;
+      font-weight: lighter;
+    }
+  }
+
+  .cta {
+    font-family: "Poppins", sans-serif;
+    background-color: transparent;
+    padding: 0.4em 1em;
+    color: $textColor;
+    border: 1px solid $textColor;
+    border-radius: 1rem;
+    animation: glow 3s linear infinite;
+
+    &:hover {
+      color: #7a7a7a;
+      border: 1px solid #7a7a7a;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    i {
+      margin-left: 1em;
+    }
+  }
+}
+
+.social-links {
+  width: 40%;
+  margin-top: 20%;
+  //   background-color: white;
+  ul {
+    @include flex(row, space-around, flex-end);
+    list-style: none;
+
+    li a {
+      color: $textColor;
+      font-size: 2em;
+    }
+  }
+}
