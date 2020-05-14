@@ -1,9 +1,8 @@
-//TODO Fix first two images
 
 // Import SCSS Modules
-@import "modules/mixins";
-@import "modules/variables";
-@import "modules/keyframes";
+@import "../modules/mixins";
+@import "../modules/variables";
+@import "../modules/keyframes";
 
 // Remove Browser Default Styling and add a box-szing of border-box
 * {

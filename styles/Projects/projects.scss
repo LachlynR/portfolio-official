@@ -1,7 +1,7 @@
 // Import SCSS Modules
-@import "modules/mixins";
-@import "modules/variables";
-@import "modules/keyframes";
+@import "../modules/mixins";
+@import "../modules/variables";
+@import "../modules/keyframes";
 
 // Remove Browser Default Styling and add a box-szing of border-box
 * {
@@ -58,54 +58,47 @@ header {
 
 // Main
 main {
-    @include flex(column, center, center);
-    text-align: center;
-    margin: auto;
+  @include flex(column, flex-start, center);
+  h1 {
     color: $textColor;
-    h1 {
-        font-size: 3em;
+  }
+
+  .project {
+    @include flex(column, space-around, center);
+    background-color: white;
+    width: 80%;
+    border-radius: 0.5em;
+    margin-bottom: 5%;
+
+    .project-image {
+      width: 98%;
+      margin: 1% 1% 2% 1%;
+      border-radius: 0.5em;
     }
 
-    h3 {
-        font-size: 1.2em;
-    }
-
-    input, textarea {
-        background-color: transparent;
-        border: 1px solid $textColor;
-        padding: 0.5em;
-        border-radius: 1em;
-        width: 90%;
-        color: $textColor;
-        margin-bottom: 3%;
-
-        &::placeholder {
-            color: $textColor;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        &:focus {
-            background-color: transparent;
-            outline: none;
-        }
-    }
-
-    .message-input {
-        height: 10em;
-    }
-
-    .social-media-links {
-        width: 100%;
-        @include flex(row, space-around, center);
-        font-size: 3em;
+    .project-description {
+        font-size: 0.7em;
+        width: 80%;
         margin-bottom: 5%;
 
         a {
-            color: $textColor;
+          display: block;
+          border: 1px solid black;
+          text-decoration: none;
+          text-align: center;
+          width: 50%;
+          margin: 5% auto auto auto;
+          color: black;
+          border-radius: 0.5em;
+
+          &:hover {
+            border: 1px solid #363636;
+            color: #252525;
+          }
         }
     }
-
     
+  }
 }
 
 footer {

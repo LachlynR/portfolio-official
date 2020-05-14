@@ -88,6 +88,11 @@ header .logo-burger {
   font-size: 1.3rem;
 }
 
+header .logo-burger .logo a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+
 header nav {
   width: 100%;
   text-align: center;

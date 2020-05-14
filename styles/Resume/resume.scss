@@ -1,7 +1,9 @@
+//TODO make logos on their own not a table column
+
 // Import SCSS Modules
-@import "modules/mixins";
-@import "modules/variables";
-@import "modules/keyframes";
+@import "../modules/mixins";
+@import "../modules/variables";
+@import "../modules/keyframes";
 
 // Remove Browser Default Styling and add a box-szing of border-box
 * {
@@ -57,91 +59,85 @@ header {
 }
 
 // Main
-
 main {
   @include flex(column, flex-start, center);
-  width: 100%;
+  .resume-heading {
+    color: $textColor;
+  }
 
-  .content {
+  .resume {
     @include flex(column, space-around, center);
     width: 100%;
-    height: 50%;
-    margin: 2rem;
-    .self-portrait {
-      width: 70%;
-      border-radius: 50%;
+    border-radius: 0.5em;
+    margin-bottom: 5%;
+    padding: 5%;
 
-      &::after {
-        content: "";
-        display: block;
-        padding-bottom: 100%;
+    .work-experience-title,
+    .education-title,
+    .skills-title {
+      padding: 1%;
+      color: $textColor;
+    }
+
+    .work-experience-table,
+    .education-table,
+    .skills-table {
+      font-size: 0.8em;
+      border-collapse: collapse;
+      background-color: rgb(228, 228, 228);
+
+      td,
+      th {
+        border: 1px solid rgb(107, 107, 107);
+        padding: 0.2em;
+        text-align: left;
       }
     }
 
-    .name,
-    .web-dev {
-      color: $textColor;
+    .skills-table {
+      width: 100%;
+      font-size: 1rem;
     }
 
-    .name {
-      font-size: 2.1rem;
-    }
-
-    .web-dev {
-      font-size: 1.2rem;
-      font-weight: lighter;
-    }
-  }
-
-  .cta {
-    font-family: "Poppins", sans-serif;
-    background-color: transparent;
-    padding: 0.4em 1em;
-    color: $textColor;
-    border: 1px solid $textColor;
-    border-radius: 1rem;
-    animation: glow 3s linear infinite;
-
-    &:hover {
-      color: #7a7a7a;
-      border: 1px solid #7a7a7a;
-    }
-
-    &:focus {
-      outline: none;
-    }
-
-    a {
+    .resume-download {
       color: $textColor;
       text-decoration: none;
+      border: 1px solid $textColor;
+      padding: 2%;
+      border-radius: 0.5em;
+
+      &:hover {
+        color: rgb(56, 56, 56);
+        border: 1px solid rgb(51, 51, 51);
+      }
     }
-
-
-    i {
-      margin-left: 1em;
-    }
-
-    
   }
 }
 
-.social-links {
-  width: 40%;
-  margin-top: 20%;
-  //   background-color: white;
-  ul {
-    @include flex(row, space-around, flex-end);
+footer {
+  width: 100%;
+  background-color: rgb(58, 58, 58);
+  color: gray;
+  .footer-links {
+    width: 100%;
+    @include flex(row, space-around, center);
     list-style: none;
+  }
 
-    li a {
-      color: $textColor;
-      font-size: 2em;
-    }
+  .footer-link {
+    color: gray;
+    text-decoration: none;
+    font-size: 0.8em;
+  }
+
+  .copyright {
+    font-size: 0.8em;
+    margin-left: 3%;
   }
 }
 
 @media only screen and (min-width: 487px) {
-    * {
-        display: none;
-    }
+  * {
+    display: none;
+  }
 }
