@@ -1,0 +1,138 @@
+// Import SCSS Modules
+@import "modules/mixins";
+@import "modules/variables";
+@import "modules/keyframes";
+
+// Remove Browser Default Styling and add a box-szing of border-box
+* {
+  @include default;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  width: 100vw;
+  @include flex(column, flex-start, center);
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to bottom, $secondary, $highlight);
+}
+
+// Header
+
+header {
+  width: 100%;
+  background-color: rgb(51, 51, 51);
+  border-bottom: 1px solid $primary;
+  @include flex(column, space-between, center);
+
+  .logo-burger {
+    @include flex(row, space-between, center);
+    width: 100%;
+    padding: 0 15%;
+    color: $textColor;
+    font-size: 1.3rem;
+  }
+
+  nav {
+    width: 100%;
+    text-align: center;
+    display: none;
+
+    .nav-links {
+      //   padding-top: 1rem;
+      list-style: none;
+
+      li {
+        padding: 0.3em 0;
+      }
+
+      .nav-link {
+        width: 100%;
+        text-decoration: none;
+        font-size: 0.8em;
+        color: $textColor;
+      }
+    }
+  }
+}
+
+// Main
+main {
+  @include flex(column, flex-start, center);
+  .blog-heading {
+    color: $textColor;
+  }
+
+  .blog {
+    @include flex(column, space-around, center);
+    background-color: white;
+    width: 80%;
+    border-radius: 0.5em;
+    margin-bottom: 5%;
+
+    .blog-title {
+        padding: 1%;
+    }
+
+    .blog-image {
+      width: 98%;
+      margin: 1% 1% 2% 1%;
+      border-radius: 0.5em;
+    }
+
+    .blog-content {
+        font-size: 0.7em;
+        width: 80%;
+        margin-bottom: 5%;
+
+        a {
+          display: block;
+          border: 1px solid black;
+          text-decoration: none;
+          text-align: center;
+          width: 50%;
+          margin: 5% auto auto auto;
+          color: black;
+          border-radius: 0.5em;
+
+          &:hover {
+            border: 1px solid #363636;
+            color: #252525;
+          }
+        }
+    }
+
+    .publish-info {
+        font-size: 0.8em;
+    }
+    
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(58, 58, 58);
+  color: gray;
+  .footer-links {
+    width: 100%;
+    @include flex(row, space-around, center);
+    list-style: none;
+  }
+
+  .footer-link {
+    color: gray;
+    text-decoration: none;
+    font-size: 0.8em;
+  }
+
+  .copyright {
+    font-size: 0.8em;
+    margin-left: 3%;
+  }
+}
+
+@media only screen and (min-width: 426px) {
+  * {
+    display: none;
+  }
+}
