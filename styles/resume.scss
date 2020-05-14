@@ -1,3 +1,6 @@
+//TODO make logos on their own not a table column
+
+
 // Import SCSS Modules
 @import "modules/mixins";
 @import "modules/variables";
@@ -134,7 +137,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 426px) {
+@media only screen and (min-width: 487px) {
   * {
     display: none;
   }
