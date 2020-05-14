@@ -5,3 +5,8 @@ $(document).ready(function() {
         $("nav").slideToggle('slow');
     })
 })
+
+
+if (screen.width > 426) {
+    alert("This is only available on screens less than 426px")
+}
