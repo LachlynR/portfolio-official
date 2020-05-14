@@ -189,6 +189,11 @@ main .cta:focus {
   outline: none;
 }
 
+main .cta a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+
 main .cta i {
   margin-left: 1em;
 }

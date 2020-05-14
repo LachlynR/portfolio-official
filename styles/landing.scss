@@ -111,9 +111,17 @@ main {
       outline: none;
     }
 
+    a {
+      color: $textColor;
+      text-decoration: none;
+    }
+
+
     i {
       margin-left: 1em;
     }
+
+    
   }
 }
 
