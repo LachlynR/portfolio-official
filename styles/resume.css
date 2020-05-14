@@ -148,18 +148,27 @@ main .resume {
   padding: 5%;
 }
 
-main .resume .work-experience-title, main .resume .education-title, main .resume .skills-title {
+main .resume .work-experience-title,
+main .resume .education-title,
+main .resume .skills-title {
   padding: 1%;
   color: #e4e4e4;
 }
 
-main .resume .work-experience-table, main .resume .education-table, main .resume .skills-table {
+main .resume .work-experience-table,
+main .resume .education-table,
+main .resume .skills-table {
   font-size: 0.8em;
   border-collapse: collapse;
   background-color: #e4e4e4;
 }
 
-main .resume .work-experience-table td, main .resume .work-experience-table th, main .resume .education-table td, main .resume .education-table th, main .resume .skills-table td, main .resume .skills-table th {
+main .resume .work-experience-table td,
+main .resume .work-experience-table th,
+main .resume .education-table td,
+main .resume .education-table th,
+main .resume .skills-table td,
+main .resume .skills-table th {
   border: 1px solid #6b6b6b;
   padding: 0.2em;
   text-align: center;
@@ -168,6 +177,19 @@ main .resume .work-experience-table td, main .resume .work-experience-table th, 
 main .resume .skills-table {
   width: 100%;
   font-size: 1rem;
+}
+
+main .resume .resume-download {
+  color: #e4e4e4;
+  text-decoration: none;
+  border: 1px solid #e4e4e4;
+  padding: 2%;
+  border-radius: 0.5em;
+}
+
+main .resume .resume-download:hover {
+  color: #383838;
+  border: 1px solid #333333;
 }
 
 footer {
