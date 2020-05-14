@@ -8,5 +8,5 @@ $(document).ready(function() {
 
 
 if (screen.width > 426) {
-    alert("This is only available on screens less than 426px")
+    alert(`This is only available on screens less than 426px. Your screen width is ${screen.width}`)
 }
