@@ -1,0 +1,137 @@
+// Import SCSS Modules
+@import "modules/mixins";
+@import "modules/variables";
+@import "modules/keyframes";
+
+// Remove Browser Default Styling and add a box-szing of border-box
+* {
+  @include default;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  width: 100vw;
+  @include flex(column, flex-start, center);
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to bottom, $secondary, $highlight);
+}
+
+// Header
+
+header {
+  width: 100%;
+  background-color: rgb(51, 51, 51);
+  border-bottom: 1px solid $primary;
+  @include flex(column, space-between, center);
+
+  .logo-burger {
+    @include flex(row, space-between, center);
+    width: 100%;
+    padding: 0 15%;
+    color: $textColor;
+    font-size: 1.3rem;
+  }
+
+  nav {
+    width: 100%;
+    text-align: center;
+    display: none;
+
+    .nav-links {
+      //   padding-top: 1rem;
+      list-style: none;
+
+      li {
+        padding: 0.3em 0;
+      }
+
+      .nav-link {
+        width: 100%;
+        text-decoration: none;
+        font-size: 0.8em;
+        color: $textColor;
+      }
+    }
+  }
+}
+
+// Main
+main {
+    @include flex(column, center, center);
+    text-align: center;
+    margin: auto;
+    color: $textColor;
+    h1 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    input, textarea {
+        background-color: transparent;
+        border: 1px solid $textColor;
+        padding: 0.5em;
+        border-radius: 1em;
+        width: 90%;
+        color: $textColor;
+        margin-bottom: 3%;
+
+        &::placeholder {
+            color: $textColor;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        &:focus {
+            background-color: transparent;
+            outline: none;
+        }
+    }
+
+    .message-input {
+        height: 10em;
+    }
+
+    .social-media-links {
+        width: 100%;
+        @include flex(row, space-around, center);
+        font-size: 3em;
+        margin-bottom: 5%;
+
+        a {
+            color: $textColor;
+        }
+    }
+
+    
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(58, 58, 58);
+  color: gray;
+  .footer-links {
+    width: 100%;
+    @include flex(row, space-around, center);
+    list-style: none;
+  }
+
+  .footer-link {
+    color: gray;
+    text-decoration: none;
+    font-size: 0.8em;
+  }
+
+  .copyright {
+    font-size: 0.8em;
+    margin-left: 3%;
+  }
+}
+
+@media only screen and (min-width: 426px) {
+  * {
+    display: none;
+  }
+}

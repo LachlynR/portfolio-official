@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/277b244517.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/contact.css" />
+    <title>Resume - Lachlyn Reynolds</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-burger">
+        <h1 class="logo">L R</h1>
+        <!-- Burger Menu Icon from Font Awesome-->
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="../index.html">Home</a></li>
+          <li><a class="nav-link" href="projects.html">Projects</a></li>
+          <li><a class="nav-link" href="blog.html">Blog</a></li>
+          <li><a class="nav-link" href="resume.html">Resume</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form method="POST" data-netlify="true" autocomplete="off" class="contact">
+        <h1>Contact Me!</h1>
+        <br />
+        <h3>Leave a message</h3>
+        <br />
+        <input
+          type="text"
+          name="name"
+          class="name-input"
+          placeholder="name..."
+        />
+        <input
+          type="emali"
+          name="email"
+          class="email-input"
+          placeholder="email..."
+        />
+        <textarea name="message" class="message-input" placeholder="message..."></textarea>
+        <input type="submit" value="Send">
+    </form>
+    <br />
+    <h3>Or connect on social media</h3>
+    <br />
+    <div class="social-media-links">
+        <a target="_blank" href="https://twitter.com/LachlynReynolds"><i class="fab fa-twitter-square"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/lachlyn-reynolds-256768197/"><i class="fab fa-linkedin"></i></a>
+        <a target="_blank" href="https://github.com/LachlynR"><i class="fab fa-github-square"></i></a>
+    </div>
+
+    </main>
+
+    <script src="../app.js"></script>
+  </body>
+</html>
