@@ -218,4 +218,10 @@ main .cta i {
   color: #e4e4e4;
   font-size: 2em;
 }
+
+@media only screen and (min-width: 421px) {
+  * {
+    display: none;
+  }
+}
 /*# sourceMappingURL=landing.css.map */
