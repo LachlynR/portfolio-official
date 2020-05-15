@@ -1,5 +1,3 @@
-//TODO make logos on their own not a table column
-
 // Import SCSS Modules
 @import "../modules/mixins";
 @import "../modules/variables";
@@ -25,24 +23,34 @@ header {
   width: 100%;
   background-color: rgb(51, 51, 51);
   border-bottom: 1px solid $primary;
-  @include flex(column, space-between, center);
+  @include flex(row, space-between, center);
 
   .logo-burger {
     @include flex(row, space-between, center);
     width: 100%;
     padding: 0 15%;
     color: $textColor;
-    font-size: 1.3rem;
+    font-size: 1.5em;
+
+    .fa-bars {
+      display: none;
+    }
+
+    .logo {
+      a {
+        color: $textColor;
+        text-decoration: none;
+      }
+    }
   }
 
   nav {
     width: 100%;
     text-align: center;
-    display: none;
 
     .nav-links {
-      //   padding-top: 1rem;
       list-style: none;
+      @include flex(row, space-around, center);
 
       li {
         padding: 0.3em 0;
@@ -51,8 +59,12 @@ header {
       .nav-link {
         width: 100%;
         text-decoration: none;
-        font-size: 0.8em;
+        font-size: 1em;
         color: $textColor;
+
+        &:hover {
+          color: white;
+        }
       }
     }
   }
@@ -62,7 +74,9 @@ header {
 main {
   @include flex(column, flex-start, center);
   .resume-heading {
+    margin-top: 2%;
     color: $textColor;
+    font-size: 4em;
   }
 
   .resume {
@@ -77,6 +91,7 @@ main {
     .skills-title {
       padding: 1%;
       color: $textColor;
+      font-size: 2em;
     }
 
     .work-experience-table,
@@ -85,6 +100,7 @@ main {
       font-size: 0.8em;
       border-collapse: collapse;
       background-color: rgb(228, 228, 228);
+      width: 100%;
 
       td,
       th {
@@ -136,8 +152,123 @@ footer {
   }
 }
 
-@media only screen and (min-width: 487px) {
-  * {
-    display: none;
+@media only screen and (max-width: 786px) {
+  header {
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+    border-bottom: 1px solid $primary;
+    @include flex(column, space-between, center);
+
+    .logo-burger {
+      @include flex(row, space-between, center);
+      width: 100%;
+      padding: 0 15%;
+      color: $textColor;
+      font-size: 1.3rem;
+
+      .fa-bars {
+        display: block;
+      }
+    }
+
+    nav {
+      width: 100%;
+      text-align: center;
+      display: none;
+
+      .nav-links {
+        @include flex(column, center, center);
+        list-style: none;
+
+        li {
+          padding: 0.3em 0;
+        }
+
+        .nav-link {
+          width: 100%;
+          text-decoration: none;
+          font-size: 0.8em;
+          color: $textColor;
+        }
+      }
+    }
+  }
+  
+  // Main
+  main {
+    @include flex(column, flex-start, center);
+    .resume-heading {
+      color: $textColor;
+    }
+  
+    .resume {
+      @include flex(column, space-around, center);
+      width: 100%;
+      border-radius: 0.5em;
+      margin-bottom: 5%;
+      padding: 5%;
+  
+      .work-experience-title,
+      .education-title,
+      .skills-title {
+        padding: 1%;
+        color: $textColor;
+      }
+  
+      .work-experience-table,
+      .education-table,
+      .skills-table {
+        font-size: 0.8em;
+        border-collapse: collapse;
+        background-color: rgb(228, 228, 228);
+  
+        td,
+        th {
+          border: 1px solid rgb(107, 107, 107);
+          padding: 0.2em;
+          text-align: left;
+        }
+      }
+  
+      .skills-table {
+        width: 100%;
+        font-size: 1rem;
+      }
+  
+      .resume-download {
+        color: $textColor;
+        text-decoration: none;
+        border: 1px solid $textColor;
+        padding: 2%;
+        border-radius: 0.5em;
+  
+        &:hover {
+          color: rgb(56, 56, 56);
+          border: 1px solid rgb(51, 51, 51);
+        }
+      }
+    }
+  }
+  
+  footer {
+    width: 100%;
+    background-color: rgb(58, 58, 58);
+    color: gray;
+    .footer-links {
+      width: 100%;
+      @include flex(row, space-around, center);
+      list-style: none;
+    }
+  
+    .footer-link {
+      color: gray;
+      text-decoration: none;
+      font-size: 0.8em;
+    }
+  
+    .copyright {
+      font-size: 0.8em;
+      margin-left: 3%;
+    }
   }
 }
