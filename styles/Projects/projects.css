@@ -152,6 +152,7 @@ main {
 main h1 {
   color: #e4e4e4;
   margin: 1% 0;
+  font-size: 4em;
 }
 
 main .project {
