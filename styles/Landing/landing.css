@@ -85,7 +85,7 @@ header .logo-burger {
   width: 100%;
   padding: 0 15%;
   color: #e4e4e4;
-  font-size: 1.3rem;
+  font-size: 1.5em;
 }
 
 header .logo-burger .fa-bars {
@@ -125,7 +125,7 @@ header nav .nav-links li {
 header nav .nav-links .nav-link {
   width: 100%;
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 1em;
   color: #e4e4e4;
 }
 
@@ -178,7 +178,7 @@ main .content .image-cell {
 }
 
 main .content .self-portrait {
-  width: 70%;
+  width: 60%;
   border-radius: 50%;
 }
 
@@ -211,11 +211,11 @@ main .content .web-dev {
 }
 
 main .content .name {
-  font-size: 2.1rem;
+  font-size: 5vw;
 }
 
 main .content .web-dev {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: lighter;
 }
 
@@ -225,7 +225,7 @@ main .cta {
   padding: 0.4em 1em;
   color: #e4e4e4;
   border: 1px solid #e4e4e4;
-  border-radius: 1rem;
+  border-radius: 1.2rem;
   -webkit-animation: glow 3s linear infinite;
           animation: glow 3s linear infinite;
   margin-top: 5%;
@@ -243,15 +243,19 @@ main .cta:focus {
 main .cta a {
   color: #e4e4e4;
   text-decoration: none;
+  font-size: 1.5em;
 }
 
 main .cta i {
   margin-left: 1em;
+  font-size: 1.5em;
 }
 
 .social-links {
+  position: absolute;
   width: 40%;
-  margin-top: 5vh;
+  bottom: 5%;
+  left: 28%;
 }
 
 .social-links ul {
@@ -272,7 +276,7 @@ main .cta i {
 
 .social-links ul li a {
   color: #e4e4e4;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .social-links ul li a:hover {
@@ -317,6 +321,9 @@ main .cta i {
     color: #e4e4e4;
     font-size: 1.3rem;
   }
+  header .logo-burger .fa-bars {
+    display: block;
+  }
   header .logo-burger .logo a {
     color: #e4e4e4;
     text-decoration: none;
@@ -328,6 +335,19 @@ main .cta i {
   }
   header nav .nav-links {
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header nav .nav-links li {
     padding: 0.3em 0;

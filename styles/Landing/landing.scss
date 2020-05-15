@@ -28,7 +28,7 @@ header {
     width: 100%;
     padding: 0 15%;
     color: $textColor;
-    font-size: 1.3rem;
+    font-size: 1.5em;
 
     .fa-bars {
       display: none;
@@ -57,7 +57,7 @@ header {
       .nav-link {
         width: 100%;
         text-decoration: none;
-        font-size: 0.8em;
+        font-size: 1em;
         color: $textColor;
 
         &:hover {
@@ -85,7 +85,7 @@ main {
       @include flex(row, center, center)
     }
     .self-portrait {
-      width: 70%;
+      width: 60%;
       border-radius: 50%;
 
       &::after {
@@ -106,11 +106,11 @@ main {
     }
 
     .name {
-      font-size: 2.1rem;
+      font-size: 5vw;
     }
 
     .web-dev {
-      font-size: 1.2rem;
+      font-size: 2rem;
       font-weight: lighter;
     }
   }
@@ -121,7 +121,7 @@ main {
     padding: 0.4em 1em;
     color: $textColor;
     border: 1px solid $textColor;
-    border-radius: 1rem;
+    border-radius: 1.2rem;
     animation: glow 3s linear infinite;
     margin-top: 5%;
 
@@ -137,17 +137,21 @@ main {
     a {
       color: $textColor;
       text-decoration: none;
+      font-size: 1.5em;
     }
 
     i {
       margin-left: 1em;
+      font-size: 1.5em;
     }
   }
 }
 
 .social-links {
+  position: absolute;
   width: 40%;
-  margin-top: 5vh;;
+  bottom: 5%;
+  left: 28%;
   //   background-color: white;
   ul {
     @include flex(row, space-around, flex-end);
@@ -155,7 +159,7 @@ main {
 
     li a {
       color: $textColor;
-      font-size: 2em;
+      font-size: 3em;
 
       &:hover {
         color: white;
@@ -178,6 +182,10 @@ main {
       color: $textColor;
       font-size: 1.3rem;
 
+      .fa-bars {
+        display: block;
+      }
+
       .logo {
         a {
           color: $textColor;
@@ -194,6 +202,7 @@ main {
       .nav-links {
         //   padding-top: 1rem;
         list-style: none;
+        @include flex(column, center, center);
 
         li {
           padding: 0.3em 0;
