@@ -82,7 +82,7 @@ main {
     height: 50%;
     margin: 2rem;
     .image-cell {
-      @include flex(row, center, center)
+      @include flex(row, center, center);
     }
     .self-portrait {
       width: 60%;
@@ -115,34 +115,35 @@ main {
     }
   }
 
-  .cta {
-    font-family: "Poppins", sans-serif;
-    background-color: transparent;
-    padding: 0.4em 1em;
-    color: $textColor;
-    border: 1px solid $textColor;
-    border-radius: 1.2rem;
-    animation: glow 3s linear infinite;
-    margin-top: 5%;
-
-    &:hover {
-      color: #7a7a7a;
-      border: 1px solid #7a7a7a;
-    }
-
-    &:focus {
-      outline: none;
-    }
-
-    a {
+  .cta-link {
+    text-decoration: none;
+    .cta {
+      font-family: "Poppins", sans-serif;
+      background-color: transparent;
+      padding: 0.4em 1em;
       color: $textColor;
-      text-decoration: none;
-      font-size: 1.5em;
-    }
+      border: 1px solid $textColor;
+      border-radius: 1.2em;
+      animation: glow 3s linear infinite;
+      margin-top: 5%;
+      font-size: 1.2em;
+      @include flex(row, center, center);
 
-    i {
-      margin-left: 1em;
-      font-size: 1.5em;
+      &:hover {
+        color: #7a7a7a;
+        border: 1px solid #7a7a7a;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      
+
+      i {
+        margin-left: 1em;
+        font-size: 1.5em;
+      }
     }
   }
 }
