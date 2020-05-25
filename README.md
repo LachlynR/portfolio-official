@@ -82,16 +82,48 @@ Same as mobile but with desktop nav bar
 
 ## Screenshots
 
+### Home Mobile
+
 ![home-mobile](https://github.com/LachlynR/portfolio-official/blob/master/images/website-screenshots/home-mobile.jpg?raw=true)
+
+### Home Desktop
+
 ![home-desktop](https://github.com/LachlynR/portfolio-official/blob/master/images/website-screenshots/home-desktop.png?raw=true)
+
+### Home Mobile (with nav)
+
 ![home-nav-mobile](https://github.com/LachlynR/portfolio-official/blob/master/images/website-screenshots/home-nav-mobile.jpg?raw=true)
+
+### Projects Mobile
+
 ![projects-mobile](https://github.com/LachlynR/portfolio-official/blob/master/images/website-screenshots/project-mobile.jpg?raw=true)
+
+### Projects Desktop
+
 ![projects-desktop](https://github.com/LachlynR/portfolio-official/blob/master/images/website-screenshots/projects-desktop.png?raw=true)
+
+### Blog Mobile
+
 ![blog-mobile](https://github.com/LachlynR/portfolio-official/blob/master/images/website-screenshots/blog-mobile.jpg?raw=true)
+
+### Blog Desktop
+
 ![blog-desktop](https://github.com/LachlynR/portfolio-official/blob/master/images/website-screenshots/blog-desktop.png?raw=true)
+
+### Resume Mobile
+
 ![resume-mobile](https://github.com/LachlynR/portfolio-official/blob/master/images/website-screenshots/resume-mobile.jpg?raw=true)
+
+### Resume Desktop
+
 ![resume-desktop](https://github.com/LachlynR/portfolio-official/blob/master/images/website-screenshots/resume-desktop.png?raw=true)
+
+### Contact Mobile
+
 ![contact-mobile](https://github.com/LachlynR/portfolio-official/blob/master/images/website-screenshots/contact-mobile.jpg?raw=true)
+
+### Contact Desktop
+
 ![contact-desktop](https://github.com/LachlynR/portfolio-official/blob/master/images/website-screenshots/contact-desktop.png?raw=true)
 
 ## Tech Stack
