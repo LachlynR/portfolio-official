@@ -30,7 +30,7 @@ header {
     color: $textColor;
     font-size: 1.5em;
 
-    .fa-bars {
+    .fa-hamburger {
       display: none;
     }
 
@@ -117,7 +117,7 @@ main {
   .cta {
     font-family: "Poppins", sans-serif;
     background-color: transparent;
-    padding: 0.4em 1em;
+    // padding: 0.4em 1em;
     color: $textColor;
     border: 1px solid $textColor;
     border-radius: 1.2em;
@@ -143,6 +143,8 @@ main {
       font-size: 1.2em;
       text-decoration: none;
       color: $textColor;
+      padding: 0.5em;
+      @include flex(row, center, center);
     }
   }
 }
@@ -182,7 +184,7 @@ main {
       color: $textColor;
       font-size: 1.3rem;
 
-      .fa-bars {
+      .fa-hamburger {
         display: block;
       }
 
@@ -258,7 +260,6 @@ main {
     .cta {
       font-family: "Poppins", sans-serif;
       background-color: transparent;
-      padding: 0.4em 1em;
       color: $textColor;
       border: 1px solid $textColor;
       border-radius: 1rem;

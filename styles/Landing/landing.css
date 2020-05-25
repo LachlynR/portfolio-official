@@ -88,7 +88,7 @@ header .logo-burger {
   font-size: 1.5em;
 }
 
-header .logo-burger .fa-bars {
+header .logo-burger .fa-hamburger {
   display: none;
 }
 
@@ -222,7 +222,6 @@ main .content .web-dev {
 main .cta {
   font-family: "Poppins", sans-serif;
   background-color: transparent;
-  padding: 0.4em 1em;
   color: #e4e4e4;
   border: 1px solid #e4e4e4;
   border-radius: 1.2em;
@@ -263,6 +262,20 @@ main .cta .cta-link {
   font-size: 1.2em;
   text-decoration: none;
   color: #e4e4e4;
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .social-links {
@@ -335,7 +348,7 @@ main .cta .cta-link {
     color: #e4e4e4;
     font-size: 1.3rem;
   }
-  header .logo-burger .fa-bars {
+  header .logo-burger .fa-hamburger {
     display: block;
   }
   header .logo-burger .logo a {
@@ -428,7 +441,6 @@ main .cta .cta-link {
   main .cta {
     font-family: "Poppins", sans-serif;
     background-color: transparent;
-    padding: 0.4em 1em;
     color: #e4e4e4;
     border: 1px solid #e4e4e4;
     border-radius: 1rem;
