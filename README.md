@@ -4,6 +4,8 @@
 
 [My GitHub Repo](https://github.com/LachlynR/portfolio-official)
 
+[Link to Presentation](https://docs.google.com/presentation/d/1s00vSlr4Y2BHv-ZZd21W0KI3AW73wmwOKHetNKVCZ_Q/edit?usp=sharing)
+
 ## Purpose
 
 The purpose of my website is to give potential employers a platform to get to know who I am and my capabilities. Although the major purpose is for employers, but I also built it as a learning experience, to turn theory into something practical.
@@ -135,5 +137,3 @@ I used Netlify to deploy my website, also utilising their forms functionality in
 I used font-awesome for icons
 I used google fonts for my Poppins font.
 I used [Zinoui.com](https://zinoui.com/tools/sri-generator)'s SRI hash generator to add System Resource Integrity to my website. I used sha-512.
-
-## Presentation
