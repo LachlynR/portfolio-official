@@ -162,43 +162,50 @@ main h3 {
 
 main input,
 main textarea {
-  background-color: transparent;
+  background-color: #ebebeb;
   border: 1px solid #e4e4e4;
   padding: 0.5em;
   border-radius: 1em;
   width: 90%;
-  color: #e4e4e4;
+  color: black;
   margin-bottom: 3%;
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
 }
 
 main input::-webkit-input-placeholder,
 main textarea::-webkit-input-placeholder {
-  color: #e4e4e4;
+  color: black;
   font-family: "Poppins", sans-serif;
 }
 
 main input:-ms-input-placeholder,
 main textarea:-ms-input-placeholder {
-  color: #e4e4e4;
+  color: black;
   font-family: "Poppins", sans-serif;
 }
 
 main input::-ms-input-placeholder,
 main textarea::-ms-input-placeholder {
-  color: #e4e4e4;
+  color: black;
   font-family: "Poppins", sans-serif;
 }
 
 main input::placeholder,
 main textarea::placeholder {
-  color: #e4e4e4;
+  color: black;
   font-family: "Poppins", sans-serif;
 }
 
 main input:focus,
 main textarea:focus {
-  background-color: transparent;
+  background-color: #ebebeb;
   outline: none;
+}
+
+main textarea {
+  font-size: 1em;
+  letter-spacing: 0.05em;
 }
 
 main .message-input {
